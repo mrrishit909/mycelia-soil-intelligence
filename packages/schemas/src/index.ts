@@ -1,0 +1,9 @@
+export type SoilType = "loam" | "clay" | "sandy-loam" | "silt";
+export type Tillage = "conventional" | "no-till";
+export type Pt = [number, number];
+export type Field = { id: string; name: string; crop: string; soilType: SoilType; tillage: Tillage; areaHa: number; polygon: Pt[]; centroid: Pt; neighbours: string[]; hedgerowM: number; perimeterM: number; rotation: string[]; cover: boolean; compost: boolean };
+export type Farm = { id: string; name: string; extent: { w: number; h: number }; fields: Field[] };
+export type SoilLayer = { depthCm: number; moisture: number; organicCarbon: number; ph: number; nitrogen: number };
+export type FieldSoil = { fieldId: string; asOf: string; layers: SoilLayer[]; socHistory: { year: number; soc: number }[] };
+export type Practice = { tillage: Tillage; cover: boolean; compost: boolean; rotation: string[] };
+export type Scenario = { id: string; fieldId: string; name: string; practice: Practice; years: number; projected: { socSeries: { year: number; soc: number }[]; soc0: number; socEnd: number; infiltrationMmH: number; health0: number; healthEnd: number; diversity: number; nBalance: number } };

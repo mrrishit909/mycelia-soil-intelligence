@@ -1,0 +1,7 @@
+{
+  "_doc": "Asset contract for the soil cutaway. Names must exist in exports/soil-cutaway.glb; guides.json is written by build.py from the same polylines the GLB tubes are built from.",
+  "nodes": ["SoilCutaway", "Topsoil", "Subsoil", "Bedrock", "Rock_1", "Rock_2", "Rock_3", "Rock_4", "Rock_5", "Rock_6", "WaterChannel_1", "WaterChannel_2", "WaterChannel_3", "RootSystem_cereal", "RootSystem_legume", "RootSystem_brassica", "Anchor_InfiltrationEntry", "Anchor_CutawayOrigin", "Anchor_CrackPoint"],
+  "guides": {"root_cereal": {"min": 18}, "root_legume": {"min": 10}, "root_brassica": {"min": 10}, "mycelium": {"min": 12}, "water": {"min": 3}},
+  "block": {"width": 20, "depth": 20, "layers": {"Topsoil": [-3, 0], "Subsoil": [-8, -3], "Bedrock": [-14, -8]}},
+  "budget": {"tris": 40000, "bytes": 700000}
+}

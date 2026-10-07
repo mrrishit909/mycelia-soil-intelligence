@@ -1,0 +1,15 @@
+{
+ "tris": 5026,
+ "bytes": 109756,
+ "missing": [],
+ "orphans": [],
+ "guides": {
+  "root_cereal": 40,
+  "root_legume": 20,
+  "root_brassica": 20,
+  "mycelium": 16,
+  "water": 3
+ },
+ "guideProblems": [],
+ "layerThicknessOk": true
+}
